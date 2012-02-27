@@ -9,8 +9,8 @@ Quickstart
 ==========
 
 1) Create an account at http://openshift.redhat.com/
-2) Create a wsgi-3.2 application and attach mysql to it:
-    $ rhc-create-app -a reviewboard -t wsgi-3.2
+2) Create a python-2.6 application and attach mysql to it:
+    $ rhc-create-app -a reviewboard -t python-2.6
     $ rhc-ctl-app -a reviewboard -e add-mysql-5.1
 3) Add this upstream reviewboard repo
     $ cd reviewboard
