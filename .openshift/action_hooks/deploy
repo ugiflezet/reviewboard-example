@@ -17,7 +17,7 @@ export PATH=$PATH:~/$OPENSHIFT_APP_NAME/virtenv/bin/
 
 set -e
 
-if [ $DOMAIN_NAME == "CHANGEME" ]
+if [ $DOMAIN_NAME = "CHANGEME" ]
 then
     echo 1>&2
     echo 1>&2
