@@ -75,5 +75,5 @@ else
 fi
 
 # Setup symlinks to properly display static content
-ln -s ../../../data/$OPENSHIFT_APP_NAME/htdocs/media/ $OPENSHIFT_REPO_DIR/wsgi/static/media
-ln -s ../../../data/$OPENSHIFT_APP_NAME/htdocs/errordocs/ $OPENSHIFT_REPO_DIR/wsgi/static/errordocs
+ln -s ../../../../data/$OPENSHIFT_APP_NAME/htdocs/media/ $OPENSHIFT_REPO_DIR/wsgi/static/media
+ln -s ../../../../data/$OPENSHIFT_APP_NAME/htdocs/errordocs/ $OPENSHIFT_REPO_DIR/wsgi/static/errordocs
