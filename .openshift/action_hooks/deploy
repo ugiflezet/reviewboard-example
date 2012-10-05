@@ -30,7 +30,7 @@ then
     exit 9
 fi
 
-if [ -z $OPENSHIFT_DB_HOST ]
+if [ -z $OPENSHIFT_MYSQL_DB_HOST ]
 then
     echo 1>&2
     echo 1>&2
@@ -50,9 +50,9 @@ else
     rb-site install --domain-name="$DOMAIN_NAME" \
                     --db-name="$DATABASE_NAME" \
                     --db-type="$DATABASE_TYPE" \
-                    --db-host="$OPENSHIFT_DB_HOST" \
-                    --db-user="$OPENSHIFT_DB_USERNAME" \
-                    --db-pass="$OPENSHIFT_DB_PASSWORD" \
+                    --db-host="$OPENSHIFT_MYSQL_DB_HOST" \
+                    --db-user="$OPENSHIFT_MYSQL_DB_USERNAME" \
+                    --db-pass="$OPENSHIFT_MYSQL_DB_PASSWORD" \
                     --site-root="/" \
                     --media-url="static/media/" \
                     --admin-user="$REVIEWBOARD_ADMIN" \
