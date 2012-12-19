@@ -62,7 +62,7 @@ else
                     --web-server-type="apache" \
                     --python-loader=wsgi \
                     --cache-type="file" \
-                    --cache-info="file:///tmp/reviewboard_cache" \
+                    --cache-info="/tmp/reviewboard_cache" \
                     --noinput $OPENSHIFT_DATA_DIR$OPENSHIFT_APP_NAME/
 
     echo 1>&2
